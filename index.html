@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marta web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="fotos/Logo.jpg" alt="Foto Marta">  
+            <h2 class="Nombre-web">Marta</h2>
+        </div>
+
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#sobre-mi" class="nav-link">Sobre mi</a>
+                </li>
+                <li>
+                    <a href="#formulario" class="nav-link">Contacto</a>
+
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main id="hero">
+        <div class="bienvenida">
+            <h1>Bienvenido a Loar</h1>
+            <p>En esta web podras encontrar todo lo que necesitas relacionado con el arte</p>
+            <button type="button" class="chafardear">
+                <ul class="botones">
+                    <li>
+                        <a href="#sobre-mi1" class="chafardear1">Diseños</a>
+                    </li>
+                </ul>
+            </button>
+        </div>
+        <video muted autoplay loop>
+            <source src="fotos/VideoFondo.mp4" type="video/mp4">
+        </video>
+        <div class="capa"></div>
+    </main>
+
+    <section id="sobre-mi" class="sobre-mi">
+        <aside>
+            <div class="sobre-mi">
+
+                <section id="sobre-mi">
+                    <div class="contenedor">
+                        <h2>Sobre mí</h2>
+                        <p>
+                            Hola que estés leyendo esto significa mucho para mí y por ello <strong>GRACIAS</strong>.
+                        </p>
+                        <p>
+                            Antes que nada me presento, soy Marta, actualmente trabajo como arquitecta, pero mi verdadera pasión es el arte en todas sus expresiones y formas.
+                        </p>
+                        <p>
+                            Durante toda mi vida he sentido curiosidad por miles de técnicas y cada una de ellas me atrae y me aporta diferentes formas de expresión pero siempre lo había enfocado como un simple pasatiempo con el que expresarme y desconectar de la rutina.
+                        </p>
+                        <p>
+                            Algo más por lo que sentía curiosidad era el tatuaje, ya que es una forma de expresión que ha estado presente en todas las civilizaciones desde hace millones de años, por ello decidí formarme, sin expectativas, sólo por aprender algo distinto, salir de mi zona de confort, mantener la mente ocupada, pero sin quererlo descubrí un mundo apasionante, una mezcla de disciplinas, como el diseño, la representación, el dibujo, la fotografía, en el que el lienzo es la piel de una persona con inquietudes, sueños y vivencias que llevará tu obra siempre encima con ella. ¿Qué puede haber más motivador que eso?
+                        </p>
+                        <p>
+                            <strong>Loart tattoo</strong> nació de un momento de inflexión y cambio, en el que decidí emprender un rumbo diferente y buscar motivación en lo que realmente me gustaría dedicar mi vida, el arte. ¿Te gustaría ayudarme a conseguirlo?
+                        </p>
+                    </div>
+                </section>
+               
+            <div>
+    
+        </aside>
+
+
+    </section>
+    
+
+    <section id="sobre-mi1">
+
+        <div class="galeria">
+            <div>
+                <img src="./fotos/imagen 1.jpg" alt="imagen1">
+                <p>Descripcion de la imagen</p>
+            </div>
+            <div>
+                <img src="./fotos/imagen 2.jpg" alt="imagen1">
+                <p>Descripcion de la imagen</p>
+            </div>
+            <div>
+                <img src="./fotos/imagen 3.jpg" alt="imagen1">
+                <p>Descripcion de la imagen</p>
+            </div>
+
+        </div>
+        <div class="galeria">
+            <div>
+                <img src="./fotos/imagen 4.jpg" alt="imagen1">
+                <p>Descripcion de la imagen</p>
+            </div>
+            <div>
+                <img src="./fotos/imagen 5.jpg" alt="imagen1">
+                <p>Descripcion de la imagen</p>
+            </div>
+            <div>
+                <img src="./fotos/imagen 6.jpg" alt="imagen1">
+                <p>Descripcion de la imagen</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="formulario">
+        <form  id="formulario" action="https://formsubmit.co/martalopez24@gmail.com" method="POST">
+            <h2 class="contacto" >Contacto</h2>
+        
+            <div class="input-group">
+    
+                <label for="name">Nombre</label>
+                <input placeholder="Escribe tu nombre" type="text" id="name" name="name" required>
+            
+            
+                <label for="phone">Teléfono</label>
+                <input  placeholder="Escribe tu teléfono" type="text" id="nombre" name="phone" required>
+            
+            
+                <label for="email">Email</label>
+                <input  placeholder="Escribe tu Email" type="email" id="email" name="email" required>
+            
+            
+                <label for="message">Mensaje</label>
+                <textarea  placeholder="Escribe tu mensaje" name="message" id="mensaje" cols="30" rows="10" required></textarea>
+                
+                <input type="submit" value="Enviar" class="btn">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                <input type="hidden" name="_captcha" value="false">
+            </div>
+        
+        </form>
+    </div>
+
+
+</body>
+<footer>
+    <div>
+        <div>Legal?</div>
+        <div>Privacidad?</div>
+        <div>No hace falta poner nada, ya se nos ocurrira algo</div>
+
+    </div>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+</footer>
+</html>
+

@@ -1,0 +1,287 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    transform: scale(1.4);  
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #d182db;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+    transition: all 0,3s;
+    border-radius: 4px;
+}
+.logo img:hover{
+    transform: scale(1.4);
+}
+.menu li{
+    display: inline;
+    margin: 0 10px;
+    transition: all 0,3s;
+
+}
+.botones{
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 0 10px;
+    list-style: none;
+    transition: all 0,3s;
+}
+.botones:hover{
+    transform: scale(1.2);
+    color: #fff;
+}
+
+nav:hover{
+    transform: scale(1.2);
+    color: #fff;
+}
+nav a:hover{
+    color: #fff;
+}
+
+.bienvenida{
+    padding-top: 350px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+
+}
+/* Estilo general para la sección "Sobre mí" */
+#sobre-mi {
+    background-color: #d182db;
+    color: #f7f2f2;
+    padding: 40px 20px;
+    text-align: justify; /* Alineación del texto */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal */
+#sobre-mi .contenedor {
+    max-width: 800px;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    border-radius: 10px;
+    box-shadow: 19px 19px 19px rgba(5, 5, 5, 0.1); /* Sombras para diseño elegante */
+    background-color: #d182db; /* Fondo blanco para contraste */
+    padding: 20px;
+}
+
+/* Encabezado principal */
+#sobre-mi h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff; /* Color destacado */
+}
+
+/* Destacar palabras clave */
+#sobre-mi p strong{
+    color: #0b1414;
+    font-weight: bold;
+
+}
+
+#hero {
+    min-height: 100vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0,5;
+    mix-blend-mode: overlay;
+}
+
+.chafardear{
+    background-color: #d182db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.chafardear1{
+    color: #fff;
+    border-radius: 5px;
+    font-size: 2em;
+    cursor: pointer;
+}
+.formulario{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: #c95fc0;
+    padding: 50px 55px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    text-align: center;
+    width: 340px;
+
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid #d182db;
+    border-radius: 5px;
+}
+.contacto{
+    color: rgb(238, 231, 231);
+    font-size: 35px;
+}
+ label{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+input, textarea{
+    padding: 17px 25px;
+    margin-bottom: 15px;
+    border: 2px solid #d182db;
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: #000;
+    outline: none;
+}
+input::placeholder, textarea::placeholder{
+    color: #000;
+}
+
+.btn{
+    background-color:#d182db;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+}
+
+.btn:hover{
+    background-color: #36c431;
+}
+.nav-button{
+    border-radius: 5px;
+    background-color: #bad678;
+}
+
+
+section{
+    padding: 20px;
+    background-color: #d182db;
+    color: #fff;
+    text-align: center;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+.galeria img{
+    
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+ .sobre-mi{
+    padding: 20px;
+    background-color: #d182db; /* Un color para diferenciar */
+    margin-bottom: 20px; /* Esto crea el espacio entre secciones */
+    margin-top: 20px;
+    border-radius: 10px
+}
+
+
+
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: 1fr; /* Una columna */
+    }
+
+    .galeria img {
+        width: 100%; /* Ancho completo */
+        height: auto; /* Ajuste automático de la altura */
+    }
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction:row;
+    }
+    nav{
+        padding: 10px 0;
+    }
+    .chafardear{
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    .formulario{
+        min-height: calc(100vh - 20px); /* Resta los márgenes u otros elementos */
+        width: 90%
+    }
+    form{
+        padding: 50px 30px;
+        width: 100%;	
+    }
+    input{
+        padding: 15px;
+    }
+}
+
